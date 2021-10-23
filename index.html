@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>AI MUSIC WEB APP PART 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background.jpg">
+<center>
+<h3 class="heading"> AI MUSIC WEB APP
+<br>
+<span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. Move your 
+right-hand wrist up and down for increasing and decreasing the speed. This web application can change the song as 
+per the wrist you show in front of the webcam. If you show your left wrist it will be playing a song, and if you 
+show your right wrist it will play a different song.</span>
+</h3>
+<div class="div_speed">
+<img src="lotus.jpg" id="div_speed_img">
+<br><br>
+<h3 class="btn btn-success speed">Speed</h3>
+</div>
+<div class="div_volume">
+<img src="swan.jpg" id="div_volume_img">
+<br><br>
+<h3 class="btn btn-success volume">Volume</h3>
+</div>
+<br><br>
+<button onclick="play()" class="btn btn-success play_button"> P L A Y </button>
+<br><br>
+<button onclick="stop()" class="btn btn-danger danger_button"> S T O P  </button>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
